@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式选择器</title>
+    <style>
+        div,p{
+            color: red;
+
+        }
+        #box{
+            color: aqua;
+        }
+        .black{
+            color: black;
+        }
+        .bold{
+            font-weight: bold;
+        }
+
+        .duanluo{
+            text-indent: 40px;
+            font-size: 20px;
+        }
+        .duanluo em{
+            font-style: normal;
+            color: pink;
+        }
+        .list{
+            list-style: none;
+        }
+        .list li{
+            height: 30px;
+        }
+        .list a{
+            text-decoration: none;
+            font-family: "Microsoft YaHei UI";
+            font-size:14px;
+        }
+        .list a:hover{
+            color:blue;1
+            text-decoration: underline;
+        }
+        .box1,.box2,.box3{
+            text-indent: 28px;
+            font-size: 14px;
+        }
+        .box1{
+            color: red;
+        }
+        .box2{
+            color: aqua;
+        }
+        .box3{
+            color: black;
+        }
+        .box1:before{
+            content:"样式在前面加的文字" ;
+            color: aquamarine;
+        }
+        .box2:after{
+            content:"样式在后面加的文字" ;
+            color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="black bold">这是一个div</div>
+    <div id="box" class="black">这是第二个div</div>
+    <div class="black">这是第三个div</div>
+<p class="duanluo">
+    text-indent是<em>首行缩进</em>
+    list-style: none;把表单里面的点去掉
+    font-style;italic;设置文本倾斜
+    text-decoration: none;下划线去掉
+    uhgreoihgreiognoeifnveoiuvhnioehbioefnvoierfvneirvnoierfnveiufb beubveiunveorinveoivboervboeihgiugugg
+     .box1,.box2,.box3{
+            text-indent: 28px;
+            font-size: 14px;
+        }主选择器，连续定义多个
+    div,p{
+            color: red;
+
+        }
+
+     .list a:hover{
+            color:blue;<!-- 设置鼠标移上去的颜色，即伪类选择器     -->
+            text-decoration: underline;
+        }
+
+
+
+</p>
+<p>
+    <em>usguwehgdgihrviehgeig</em>hg9reghierhgeirghreighreghreighireghiergh
+
+
+
+</p>
+    <ul class="list">
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+    </ul>
+    <div class="box1">文字001</div>
+    <div class="box2">文字002</div>
+    <div class="box3">文字003</div>
+
+
+
+
+
+
+
+</body>
+</html>

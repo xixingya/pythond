@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: gold;
+            border :10px solid black;
+            /* 按时针从十二点方向顺时针旋转 不设置左边就默认和右边一样，不设置上面就和下面一样 */
+           /* padding: 20px 100px 200px;*/
+            /*padding: 40px 200px */
+            padding:100px;
+            /*外边距的设置方法和padding的设置方法相同，将上面设置项中的'padding'换成'margin'就是外边距设置方法。
+
+
+            外边距合并指的是，当两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。解决方法如下：
+
+1、使用这种特性
+2、设置一边的外边距，一般设置margin-top
+3、将元素浮动或者定位*/
+            /* auto代表平分*/
+            margin: 100px auto;
+
+            /*padding :20px 100px 200px 30px;*/
+
+            /*padding加到盒子上面盒子会撑大*/
+
+           /* padding-top: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 200px;*/
+            /*border-top: 10px solid blue;
+            border-left: 10px dashed blue;
+            border-right: 10px dotted blue;
+            border-bottom: 10px solid blue;*/
+            /*
+
+            border-top-width: 10px;
+            border-top-color: blue;
+            /* 实线solid 虚线  dashed 点线 dotted
+            border-top-style: solid;
+            */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        元素在页面中显示成一个方块，类似一个盒子，CSS盒子模型就是使用现实中盒子来做比喻，帮助我们设置元素对应的样式。盒子模型示意图如下
+
+    </div>
+</body>
+</html>

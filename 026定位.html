@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .con{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 100px auto;
+            position: relative;
+            /* 为子集定位准备，如果父级写absolute则margin的auto属性没用*/
+        }
+        .con div{
+            background-color: gold;
+            width:200px;
+            height: 100px;
+            margin: 20px;
+            text-align: center;
+            line-height: 100px;
+        }
+        /*相对定位
+        .box1{
+            position: relative;
+            left: 136px;
+        }
+        */
+        /*.box1{
+            position: absolute;
+            left: 136px;
+        } */
+        .box1{
+            position: fixed;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+</body>
+</html>

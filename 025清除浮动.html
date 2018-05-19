@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .con ,.con2{
+            width: 300px;
+            border: 1px solid black;
+            margin :100px auto 0;
+            font-size: 0px;
+        }
+        .con a{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            background-color: gold;
+            text-align: center;
+            text-decoration: none;
+            line-height: 50px;
+            margin: 10px;
+            font-size: 20px;
+        }
+        .clearfix:before , .clearfix:after{
+            content: "";
+            display: table;
+
+        }
+        .clearfix:after{
+            clear: both;
+        }
+        .clearfix{
+            zoom:1;
+        }
+
+        .con2 a{
+            width: 50px;
+            height: 50px;
+            float: left;
+            background-color: gold;
+            text-align: center;
+            text-decoration: none;
+            line-height: 50px;
+            margin: 10px;
+            font-size: 20px;
+        }
+        .con3{
+            width: 300px;
+            border: 1px solid black;
+            margin :100px auto 0;
+        }
+        .con3 span{
+            background-color: gold;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+        <div class="con">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">7</a>
+            <a href="">8</a>
+
+        </div>
+<div class="con2 clearfix">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">7</a>
+            <a href="">8</a>
+
+        </div>
+<div class="con3 clearfix">
+    <span>元素1</span>
+    <span>元素2</span>
+    <span>元素3</span>
+</div>
+</body>
+</html>
